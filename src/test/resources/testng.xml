@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="C:/Programa��o/Java/OrageHRMProject/OrageHRMProject/src/test/resources">
-        <classes/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRMSuite">
+    <test name="OrangeHRMTest">
+        <classes>
+            <class name="com.orangehrm.test.ExampleTest"/>
+            <class name="com.orangehrm.test.ExampleTest1"/>
+        </classes>
     </test>
 </suite>

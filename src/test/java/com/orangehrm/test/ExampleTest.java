@@ -1,4 +1,4 @@
-package orangeHRM.test;
+package com.orangehrm.test;
 
 import com.orangehrm.base.BaseClass;
 import org.testng.annotations.Test;
