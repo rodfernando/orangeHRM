@@ -32,7 +32,6 @@ public class BaseClass {
         System.out.println("Classpath: " + System.getProperty("java.class.path"));
     }
 
-
     @BeforeMethod
     public void setup() {
         System.out.println("Setting up WebDriver: " + this.getClass().getSimpleName());
@@ -76,6 +75,14 @@ public class BaseClass {
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
     }
 
     //Static wait for pause - it seems like Thread sleep, but more flexible
