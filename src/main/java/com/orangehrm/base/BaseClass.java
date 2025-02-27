@@ -54,9 +54,7 @@ public class BaseClass {
         //Global implicit wait
         int implicitWait = Integer.parseInt(prop.getProperty("implicitWait"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
-        //Drive options
         driver.manage().window().maximize();
-        //Navigate to URL
         try {
             driver.get(prop.getProperty("url"));
         } catch (Exception e) {
